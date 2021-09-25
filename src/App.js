@@ -57,7 +57,7 @@ const App = () => {
               {!accessToken &&
                 <>
                   <p>And your state matches! We needed to check that to prevent CSRF attacks.</p>
-                  <p>Ok, next we can exchange the authorization code we just got forr an access token</p>
+                  <p>Ok, next we can exchange the authorization code we just got for an access token</p>
                   <Button onClick={handleGetAccessToken}>
                     Click here to do that!
                   </Button>
