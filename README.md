@@ -9,3 +9,10 @@ After authenticating, the user will be redirected back to your site. That redire
 [Next, the code is exchanged for an access token](https://drive.google.com/file/d/13C9ImJi6Cq3X8qEzrQJBa6Q1lJO86PXo/view?usp=sharing)
 
 [Finally, the access token is used to make authorized requests!](https://drive.google.com/file/d/10lTJTHgtuoN2dR-vgUxUFvHou_CuM8hg/view?usp=sharing)
+
+
+# The Code
+
+The vast majority of relevant code is located in "server.js", "routes.js", "/src/App.js", and "/src/utilities/api.js."
+
+The front end ("App.js" and "api.js") handles the redirection to the 3rd party auth service. It then sends a request to the backend "server.js" and "routes.js", which will then make a request to exchange the received code for an authorized access token. This token is returned to the frontend and used from there.
